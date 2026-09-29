@@ -1,0 +1,21 @@
+===== 1) 请求体头部（D/DeepseekProvider，已截到 messages 之前）=====
+{
+    "model": "deepseek-flash",
+    "stream": true,
+    "stream_options": {
+        "include_usage": true
+    },
+    "thinking": {
+        "type": "enabled"
+    },
+    "reasoning_effort": "low",
+    "max_tokens": 8192,
+    "top_p": 0.95,
+    "tools": "[17 tools omitted for brevity]",
+    "tool_choice": "auto",
+
+===== 2) 相关告警 =====
+检测到工具调用输出被截断。本轮所有工具调用均已作废且不会执行。请尝试减少单次输出、拆分任务，或更换更合适的模型\/供应商后重试。<\/status>"
+
+===== 3) 历史回传结构（内容已省略）=====
+{ "role": "assistant", "reasoning_content": "<省略>", "content": "<省略>" }
